@@ -6,29 +6,33 @@
 #    By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/03 16:21:16 by astridgault       #+#    #+#              #
-#    Updated: 2021/05/03 16:34:22 by astridgault      ###   ########.fr        #
+#    Updated: 2021/05/03 19:29:39 by astridgault      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libasm.a
 
-SRCS	=	
+SRCS	=	ft_strlen.s
 
 #BONUS	=	
 
-OBJS	=	${SRCS:.c=.o}
+PATH_SRCS = srcs/
+
+OBJS	=	${addprefix ${PATH_SRCS}, ${SRCS:.s=.o}}
 
 #OBJSBONUS	=	${BONUS:.c=.o}
 
 CC		=	nasm
 RM		=	rm -f
-#CFLAGS	=	-Wall -Werror -Wextra
+ASMFLAGS	=	-f macho64
+# flag linux -f elf64
 
-.c.o:
-			${CC} ${CFLAGS} -g -c $< -o ${<:.c=.o}
+.s.o:
+			${CC} ${ASMFLAGS} $<
 
 $(NAME):	${OBJS}
 			ar rcs ${NAME} ${OBJS}
+			ranlib ${NAME}
 
 #bonus:		${NAME} ${OBJSBONUS}
 #			ar rcs ${NAME} ${OBJS} ${OBJSBONUS}
