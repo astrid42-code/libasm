@@ -6,13 +6,13 @@
 #    By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/03 16:21:16 by astridgault       #+#    #+#              #
-#    Updated: 2021/05/03 19:29:39 by astridgault      ###   ########.fr        #
+#    Updated: 2021/05/04 15:18:44 by astridgault      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libasm.a
 
-SRCS	=	ft_strlen.s
+SRCS	=	ft_strlen.s ft_strcpy.s
 
 #BONUS	=	
 
@@ -24,7 +24,7 @@ OBJS	=	${addprefix ${PATH_SRCS}, ${SRCS:.s=.o}}
 
 CC		=	nasm
 RM		=	rm -f
-ASMFLAGS	=	-f elf64
+ASMFLAGS	=	-f macho64
 # flag linux -f elf64
 # flag mac -f macho64
 
