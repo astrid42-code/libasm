@@ -1,22 +1,10 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    ft_strcpy.s                                        :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/05/03 16:36:53 by astridgault       #+#    #+#              #
-#    Updated: 2021/05/04 15:38:35 by astridgault      ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 section .text
 		global ft_strcpy
 
 ft_strcpy:
-		mov rsi, src
-		mov rdi, dest
-		mov rcx, strsrc_len
+		push rbp
+		mov rbp, rsp
+		mov rax, rdi
 
 _loop:
 		cmp [rsi], byte 0

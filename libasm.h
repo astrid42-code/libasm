@@ -26,6 +26,6 @@ void		ft_main_strcpy(void);
 
 //fcts asm
 size_t      ft_strlen(const char *s);
-char        *strcpy(char *dest, const char *src);
+char        *ft_strcpy(char *dest, const char *src);
 
 #endif
