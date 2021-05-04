@@ -16,11 +16,16 @@
 #include <errno.h>
 #include <string.h>
 #include <stdio.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <stdlib.h>
 
 //fcts tests
-void		ft_strlen_test(void);
+void		ft_main_strlen(void);
+void		ft_main_strcpy(void);
 
 //fcts asm
-size_t		ft_strlen(const char *s);
+size_t      ft_strlen(const char *s);
+char        *strcpy(char *dest, const char *src);
 
 #endif
