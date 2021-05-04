@@ -23,9 +23,11 @@
 //fcts tests
 void		ft_main_strlen(void);
 void		ft_main_strcpy(void);
+void        ft_main_strcmp(void);
 
 //fcts asm
 size_t      ft_strlen(const char *s);
 char        *ft_strcpy(char *dest, const char *src);
+int         ft_strcmp(const char *s1, const char *s2);
 
 #endif
