@@ -6,7 +6,7 @@
 /*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/03 17:32:09 by astridgault       #+#    #+#             */
-/*   Updated: 2021/05/03 20:00:23 by astridgault      ###   ########.fr       */
+/*   Updated: 2021/05/04 19:15:08 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -83,7 +83,36 @@ void		ft_main_strcpy(void)
 	printf("%s\n", strcpy(str7, str4));
 }
 
-int     main()
+void		ft_main_strcmp(void)
+{
+	printf("-------------------ft_strcmp-------------------\n");
+	printf("ft_strcmp : \n");
+	printf("%d\n", ft_strcmp("", "coucouu"));
+	printf("strcmp : \n");
+	printf("%d\n", strcmp("", "coucouu"));
+	printf("----------\n");
+	printf("ft_strcmp : \n");
+	printf("%d\n", ft_strcmp("lol", "coucouu"));
+	printf("strcmp : \n");
+	printf("%d\n", strcmp("lol", "coucouu"));
+	printf("----------\n");
+	printf("ft_strcmp : \n");
+	printf("%d\n", ft_strcmp("hohohoho", "coucouu"));
+	printf("strcmp : \n");
+	printf("%d\n", strcmp("hohohoho", "coucouu"));
+	printf("----------\n");
+	printf("ft_strcmp : \n");
+	printf("%d\n", ft_strcmp("", "bonjour"));
+	printf("strcmp : \n");
+	printf("%d\n", strcmp("", "bonjour"));
+	printf("----------\n");
+	printf("ft_strcmp : \n");
+	printf("%d\n", ft_strcmp("bonjour", "bonjour"));
+	printf("strcmp : \n");
+	printf("%d\n", strcmp("bonjour", "bonjour"));
+}
+
+int     main(void)
 {
 	ft_main_strlen();
 	ft_main_strcpy();
