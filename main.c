@@ -87,19 +87,19 @@ void		ft_main_strcmp(void)
 {
 	printf("-------------------ft_strcmp-------------------\n");
 	printf("ft_strcmp : \n");
-	printf("%d\n", ft_strcmp("", "coucouu"));
+	printf("%d\n", ft_strcmp("", "coucou"));
 	printf("strcmp : \n");
-	printf("%d\n", strcmp("", "coucouu"));
+	printf("%d\n", strcmp("", "coucou"));
 	printf("----------\n");
 	printf("ft_strcmp : \n");
-	printf("%d\n", ft_strcmp("lol", "coucouu"));
+	printf("%d\n", ft_strcmp("lol", "coucou"));
 	printf("strcmp : \n");
-	printf("%d\n", strcmp("lol", "coucouu"));
+	printf("%d\n", strcmp("lol", "coucou"));
 	printf("----------\n");
 	printf("ft_strcmp : \n");
-	printf("%d\n", ft_strcmp("hohohoho", "coucouu"));
+	printf("%d\n", ft_strcmp("hohohoho", "coucou"));
 	printf("strcmp : \n");
-	printf("%d\n", strcmp("hohohoho", "coucouu"));
+	printf("%d\n", strcmp("hohohoho", "coucou"));
 	printf("----------\n");
 	printf("ft_strcmp : \n");
 	printf("%d\n", ft_strcmp("", "bonjour"));
@@ -116,5 +116,6 @@ int     main(void)
 {
 	ft_main_strlen();
 	ft_main_strcpy();
+	ft_main_strcmp();
     return (0);
 }
