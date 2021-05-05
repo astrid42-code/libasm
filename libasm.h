@@ -6,7 +6,7 @@
 /*   By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/03 16:23:33 by astridgault       #+#    #+#             */
-/*   Updated: 2021/05/03 19:38:15 by astridgault      ###   ########.fr       */
+/*   Updated: 2021/05/05 16:14:25 by astridgault      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,12 @@
 void		ft_main_strlen(void);
 void		ft_main_strcpy(void);
 void        ft_main_strcmp(void);
+void        ft_main_strdup(void);
 
 //fcts asm
 size_t      ft_strlen(const char *s);
 char        *ft_strcpy(char *dest, const char *src);
 int         ft_strcmp(const char *s1, const char *s2);
+char        *strdup(const char *s);
 
 #endif
