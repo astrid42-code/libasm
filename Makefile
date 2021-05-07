@@ -6,13 +6,13 @@
 #    By: astridgaultier <astridgaultier@student.    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/03 16:21:16 by astridgault       #+#    #+#              #
-#    Updated: 2021/05/05 16:16:09 by astridgault      ###   ########.fr        #
+#    Updated: 2021/05/06 17:33:06 by astridgault      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME	=	libasm.a
 
-SRCS	=	ft_strlen.s ft_strcpy.s ft_strcmp.s ft_strdup.s
+SRCS	=	ft_strlen.s ft_strcpy.s ft_strcmp.s ft_strdup.s ft_write.s
 
 #BONUS	=	
 

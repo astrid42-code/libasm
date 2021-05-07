@@ -7,7 +7,7 @@ section .text
 ft_strdup:
 		push rbp
 		mov rbp, rsp
-		mov r8, rdi ; copier str dans r8 (ms pk rdi et pas rsi??)
+		mov r8, rdi ; copier str dans r8 (rdi, et non rsi, car 1er registre ds lequel on passe les params)
 		call ft_strlen ; rax = len de str (rsi)
         inc rax ; +1 pour le \0
 		mov rdi, rax ; pour envoyer la taille à malloc
